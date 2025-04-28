@@ -135,7 +135,7 @@ http://127.0.0.1:5000/
 ## 👨‍💻 Author
 
 **Name**: Geeky Script  
-**GitHub**: https://github.com/geekyscript/ResumeBuilderWebBased
+**GitHub**: [https://github.com/geekyscript/ResumeBuilderWebBased](https://github.com/geekyscript/ResumeBuilderWebBased)
 **Website**: [geekyscript.com](https://geektscript.com)
 
 ---
