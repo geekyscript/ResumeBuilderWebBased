@@ -134,9 +134,9 @@ http://127.0.0.1:5000/
 
 ## 👨‍💻 Author
 
-**Name**: [Your Name Here]  
-**GitHub**: [https://github.com/yourgithub](https://github.com/yourgithub)  
-**Website**: [yourwebsite.com](https://yourwebsite.com)
+**Name**: Geeky Script  
+**GitHub**: [[https://github.com/yourgithub](https://github.com/geekyscript/ResumeBuilderWebBased)]([https://github.com/yourgithub](https://github.com/geekyscript/ResumeBuilderWebBased))  
+**Website**: [geekyscript.com](https://geektscript.com)
 
 ---
 
