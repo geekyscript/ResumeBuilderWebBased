@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="max-w-4xl mx-auto px-6 py-10 bg-white shadow-lg rounded-lg mt-10">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">PDF Resume Builder</h1>
+        <form method="POST" enctype="multipart/form-data" class="space-y-6">
+            {% for field in ["name", "email", "phone"] %}
+                <div>
+                    <label for="input-{{ field }}" class="block text-gray-700 font-semibold capitalize">{{ field }}</label>
+                    <input type="text" name="{{ field }}" id="input-{{ field }}" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+            {% endfor %}
+
+            {% for field in ["summary", "education", "skills", "experience", "languages", "certificates", "awards", "interests"] %}
+                <div>
+                    <label for="textarea-{{ field }}" class="block text-gray-700 font-semibold capitalize">{{ field.replace("_", " ") }}</label>
+                    <textarea name="{{ field }}" id="textarea-{{ field }}" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+            {% endfor %}
+
+            <div>
+                <label for="photo" class="block text-gray-700 font-semibold">Upload Profile Photo</label>
+                <input type="file" name="photo" id="photo" class="mt-2 block text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-200">
+                    Generate PDF Resume
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center mt-10 text-sm text-gray-500">
+        &copy; {{ 2025 }} Resume Builder. All rights reserved.
+    </footer>
+</body>
+</html>
